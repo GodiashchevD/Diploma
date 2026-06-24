@@ -66,9 +66,9 @@ class CustomBottomBar extends StatelessWidget {
 ) {
   final isSelected = currentIndex == index;
 
-  return Expanded( // 👈 ВАЖНО
+  return Expanded( //исп. для равномерного распределения элементов навигационной панели 
     child: GestureDetector(
-      behavior: HitTestBehavior.opaque, // 👈 ВАЖНО
+      behavior: HitTestBehavior.opaque, //вся область кнопки становится кликабельной
       onTap: () => onTap(index),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
